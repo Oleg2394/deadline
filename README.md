@@ -27,7 +27,7 @@ services:
 ### Установка и запуск Этап второй
 2. Запустить Docker DESKTOP (Проверить что служба Docker запустилась)
 3. Выполнить команду docker-compose up (Для установки и запуска контейнера)   
-4. Запустить приложение командой
-4.1   ```java -jar artifacts/app-deadline.jar -P:jdbc.url=jdbc:mysql://localhost:3306/app -P:jdbc.user=app -P:jdbc.password=pass ```
+4. Запустить приложение командой:
+4.1.   ```java -jar artifacts/app-deadline.jar -P:jdbc.url=jdbc:mysql://localhost:3306/app -P:jdbc.user=app -P:jdbc.password=pass ```
 5. Запустить автотесты.
 6. Перед повторным запуском автотестов следует остановить контейнер командой `docker-compose down` и повторить шаги 3-4.1.
