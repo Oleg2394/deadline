@@ -54,4 +54,9 @@ public class LoginTest {
         val replenishFieldPage = verificationPage.shouldNotValidVerifyWithEmptyCode(verificationCode);
         replenishFieldPage.shouldVisibleNotificationCode();
     }
+    
+     @AfterAll
+    static void clean() throws SQLException {
+        SQLUtils.cleanDb();
+    }
 }
