@@ -1,11 +1,13 @@
 package ru.netology.test;
 
 import lombok.val;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import ru.netology.data.DataHelper;
 import ru.netology.page.LoginPage;
 import java.sql.SQLException;
 import static com.codeborne.selenide.Selenide.open;
+import ru.netology.sqlUtils.SqlUtils;
 
 public class LoginTest {
 
